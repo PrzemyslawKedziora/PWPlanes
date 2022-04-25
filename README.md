@@ -1,1 +1,1 @@
-https://Blancior.github.io/pkplanes/login
+https://Blancior.github.io/pwplanes
