@@ -1,0 +1,20 @@
+<div class="row justify-content-center login-container">
+  <div class="col-sm-4 shadow login-content">
+    <img src="./assets/images/LOGO2.png" class="logo" style="width:129px;height: 130px;">
+    <br/>
+    <h3>LOGIN</h3>
+    <mat-form-field class="d-block" style="margin-left: 20%;margin-right: 20%">
+      <input matInput placeholder="Email" [(ngModel)]="credentials.email" required>
+      <mat-error>Email is required</mat-error>
+    </mat-form-field>
+    <mat-form-field class="d-block" style="margin-left: 20%;margin-right: 20%">
+      <input type="password" matInput placeholder="Password"  [(ngModel)]="credentials.password"  required (keydown.enter)="login()">
+      <mat-error>Password is required</mat-error><br/>
+    </mat-form-field>
+      <button class="login-button" mat-raised-button color="primary" (click)="login()"> LOG IN</button>
+    <br/><br/>
+    <div class="unimpText"><a routerLink="/register">Don't have an account? Do it now!</a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

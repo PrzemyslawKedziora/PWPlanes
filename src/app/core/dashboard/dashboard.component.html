@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <div class="container">
+    <img src="./assets/images/logo3.png" class="logo" routerLink="/dashboard" style="width: 129px;height: 43px;">
+    <mat-icon class="logout-icon float-right" style="cursor: pointer;" (click)="logout()">power_settings_new</mat-icon>
+    <span class="user-login float-right">Hello, {{ user?.email }}</span>
+  </div>
+</mat-toolbar>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

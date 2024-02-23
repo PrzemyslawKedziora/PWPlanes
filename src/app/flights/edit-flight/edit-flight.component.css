@@ -1,0 +1,10 @@
+#remove-btn {
+  color: red;
+  cursor: pointer;
+  font-size: 40px;
+  float: right;
+  padding-top: 5px;
+}
+h3 {
+  padding-top: 5px;
+}

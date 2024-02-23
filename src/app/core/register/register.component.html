@@ -1,0 +1,23 @@
+<div class="row justify-content-center login-container" xmlns="http://www.w3.org/1999/html">
+  <div class="col-sm-4 shadow login-content">
+    <a href="/login"><img src="./assets/images/LOGO2.png" class="logo" style="width:129px;height: 130px;"></a>
+    <br/><br/>
+    <h3>REGISTER </h3>
+    <mat-form-field class="d-block" style="margin-left: 20%;margin-right: 20%">
+      <input matInput placeholder="Email" [(ngModel)]="credentials.email" required>
+      <mat-error>Email is required</mat-error>
+    </mat-form-field>
+    <mat-form-field class="d-block" style="margin-left: 20%;margin-right: 20%">
+      <input type="password" matInput placeholder="Password"  [(ngModel)]="credentials.password"  required (keydown.enter)="register()">
+      <mat-error>Password is required</mat-error><br/>
+    </mat-form-field>
+     <!-- <mat-form-field class="d-block" style="margin-left: 20%;margin-right: 20%">
+      <input type="password" matInput placeholder="Repeat password"  [(ngModel)]="credentials.password1"  required (keydown.enter)="register()" >
+      <mat-error>Please repeat your password</mat-error><br/>
+    </mat-form-field>-->
+    <mat-checkbox required>I am accepting the <a href="https://pl.wordpress.org/about/privacy/">privacy policy.</a></mat-checkbox>
+    <br/>
+    <button class="login-button" mat-raised-button color="primary" (click)="register()">Register</button>
+  </div>
+  <router-outlet></router-outlet>
+</div>
